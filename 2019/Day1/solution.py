@@ -4,14 +4,15 @@ with open('input.txt') as file:
 import math
 SUM = 0
 SUM2 = 0
+result2 = 0
 
 for i in data:
     result = math.floor(int(i)/3) - 2
     SUM += result
 
 for i in data:
-    while (result2 < 3):
-        result2 = math.floor(int(i)/3) - 2
+    result2 = math.floor(int(i)/3) - 2
+    while (result2 > 0):
         SUM2 += result2
 
 print("Answer to part 1: ",SUM)
